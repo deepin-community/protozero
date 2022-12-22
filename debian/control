@@ -1,0 +1,57 @@
+Source: protozero
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Bas Couwenberg <sebastic@debian.org>
+Section: science
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               cmake (>= 3.5.0),
+               doxygen,
+               graphviz,
+               libprotobuf-dev <!nocheck>,
+               protobuf-compiler <!nocheck>,
+               pkg-config
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/debian-gis-team/protozero/
+Vcs-Git: https://salsa.debian.org/debian-gis-team/protozero.git
+Homepage: https://github.com/mapbox/protozero
+
+Package: libprotozero-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends}
+Breaks: libosmium2-dev (<< 2.4.1-2~)
+Replaces: libosmium2-dev (<< 2.4.1-2~)
+Suggests: protozero-doc
+Description: Minimalistic protocol buffer decoder and encoder in C++
+ protozero is a minimalistic protocol buffer decoder and encoder in C++.
+ .
+ Designed for high performance. Suitable for writing zero copy parsers
+ and encoders with minimal need for run-time allocation of memory.
+ .
+ Low-level: this is designed to be a building block for writing a very
+ customized decoder for a stable protobuf schema. If your protobuf schema
+ is changing frequently or lazy decoding is not critical for your
+ application then this approach offers no value: just use the decoding
+ API available via the C++ API that can be generated via the Google
+ Protobufs protoc program.
+ .
+ This package contains the protozero headers.
+
+Package: libprotozero-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Minimalistic protocol buffer decoder and encoder in C++ - docs
+ protozero is a minimalistic protocol buffer decoder and encoder in C++.
+ .
+ Designed for high performance. Suitable for writing zero copy parsers
+ and encoders with minimal need for run-time allocation of memory.
+ .
+ Low-level: this is designed to be a building block for writing a very
+ customized decoder for a stable protobuf schema. If your protobuf schema
+ is changing frequently or lazy decoding is not critical for your
+ application then this approach offers no value: just use the decoding
+ API available via the C++ API that can be generated via the Google
+ Protobufs protoc program.
+ .
+ This package contains the protozero documentation.

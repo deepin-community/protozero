@@ -1,0 +1,276 @@
+protozero (1.7.1-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>  Wed, 22 Jun 2022 15:14:42 +0800
+
+protozero (1.7.1-1) unstable; urgency=medium
+
+  [ Bas Couwenberg ]
+  * New upstream release.
+  * Bump watch file version to 4.
+  * Update lintian overrides.
+  * Bump Standards-Version to 4.6.0, no changes.
+  * Update watch file for GitHub URL changes.
+  * Bump debhelper compat to 12, changes:
+    - Drop --list-missing from dh_install
+  * Update doc-base paths.
+  * Update copyright file.
+  * Refresh patches.
+
+  [ Helmut Grohne ]
+  * Annotate test dependencies on protobuf <!nocheck>.
+    (closes: #981605)
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 11 Jan 2022 05:53:24 +0100
+
+protozero (1.7.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.5.0, no changes.
+  * Drop Name field from upstream metadata.
+  * Bump debhelper compat to 10, changes:
+    - Drop --parallel option, enabled by default
+  * Update copyright years for Two Blue Cubes Ltd.
+  * Add patch to fix privacy-breach lintian issues.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 08 Jun 2020 15:38:54 +0200
+
+protozero (1.6.8-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update gbp.conf to use --source-only-changes by default.
+  * Bump Standards-Version to 4.4.0, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 15 Aug 2019 15:26:03 +0200
+
+protozero (1.6.7-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 21 Feb 2019 12:00:42 +0100
+
+protozero (1.6.6-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 21 Feb 2019 06:56:30 +0100
+
+protozero (1.6.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.3.0, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 06 Feb 2019 16:25:11 +0100
+
+protozero (1.6.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.2.1, no changes.
+  * Update watch file to limit matches to archive path.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 08 Nov 2018 17:45:31 +0100
+
+protozero (1.6.3-2) unstable; urgency=medium
+
+  * Drop autopkgtest to test installability.
+  * Add lintian override for testsuite-autopkgtest-missing.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 01 Aug 2018 16:38:06 +0200
+
+protozero (1.6.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update Vcs-* URLs for Salsa.
+  * Bump Standards-Version to 4.1.5, no changes.
+  * Strip trailing whitespace from control & rules files.
+  * Use filter instead of findstring to prevent partial matches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 17 Jul 2018 18:17:35 +0200
+
+protozero (1.6.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update copyright-format URL to use HTTPS.
+  * Don't use libjs-jquery for Doxygen docs.
+  * Bump Standards-Version to 4.1.3, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 09 Mar 2018 20:39:21 +0100
+
+protozero (1.6.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 16 Nov 2017 18:36:28 +0100
+
+protozero (1.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add cmake to build dependencies.
+  * Update packaging for cmake build.
+  * Bump Standards-Version to 4.1.1, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 24 Oct 2017 20:08:16 +0200
+
+protozero (1.5.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.1.0, no changes.
+  * Update path for catch.hpp in copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 22 Sep 2017 16:49:40 +0200
+
+protozero (1.5.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.0.0, no changes.
+  * Add autopkgtest to test installability.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 01 Jul 2017 11:05:12 +0200
+
+protozero (1.5.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop makefile-docs.patch, applied upstream.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 14 Jan 2017 11:19:51 +0100
+
+protozero (1.5.0-1) unstable; urgency=medium
+
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 12 Jan 2017 19:25:52 +0100
+
+protozero (1.5.0-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Include additional docs in libprotozero-dev.
+  * Add patch to update DOC_FILES to fix `make doc` failure.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 12 Jan 2017 14:29:29 +0100
+
+protozero (1.4.5-1) unstable; urgency=medium
+
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 21 Nov 2016 07:15:23 +0100
+
+protozero (1.4.5-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 18 Nov 2016 16:12:38 +0100
+
+protozero (1.4.4-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop 0001-Fixed-byteswap-implementation.patch, included upstream.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 15 Nov 2016 22:16:28 +0100
+
+protozero (1.4.3-1~exp2) experimental; urgency=medium
+
+  * Add upstream patch to fix FTBFS on big endian architectures.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 15 Nov 2016 20:41:25 +0100
+
+protozero (1.4.3-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 15 Nov 2016 14:46:55 +0100
+
+protozero (1.4.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 27 Aug 2016 09:58:57 +0200
+
+protozero (1.4.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop © character from copyright statement in copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 22 Aug 2016 07:34:50 +0200
+
+protozero (1.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 3.9.8, no changes.
+  * Update watch file to handle more tag conventions in filenamemangle.
+  * Override dh_auto_install to set appropriate DESTDIR.
+  * Override dh_install to use --list-missing.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 22 Jul 2016 16:29:25 +0200
+
+protozero (1.3.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update Vcs-Git URL to use HTTPS.
+  * Bump Standards-Version to 3.9.7, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 19 Feb 2016 11:36:58 +0100
+
+protozero (1.2.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 01 Dec 2015 09:14:44 +0100
+
+protozero (1.2.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 13 Oct 2015 09:08:19 +0200
+
+protozero (1.2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 12 Oct 2015 22:30:21 +0200
+
+protozero (1.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update Vcs-Browser URL to use HTTPS.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 12 Oct 2015 08:18:37 +0200
+
+protozero (1.1.0-5) unstable; urgency=medium
+
+  * Fix Breaks/Replaces to use less then versions only.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 02 Sep 2015 21:36:48 +0200
+
+protozero (1.1.0-4) unstable; urgency=medium
+
+  * Ignore test failures only on problematic architectures.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 02 Sep 2015 16:17:13 +0200
+
+protozero (1.1.0-3) unstable; urgency=medium
+
+  * Use Breaks/Replaces for libosmium2-dev versions including protozero only.
+  * Ignore test failures to not fail the entire build.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 02 Sep 2015 13:29:03 +0200
+
+protozero (1.1.0-2) unstable; urgency=medium
+
+  * Add license & copyright for test/include/catch.hpp.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 01 Sep 2015 14:53:24 +0200
+
+protozero (1.1.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Install CHANGELOG.md as upstream changelog.
+  * Use versioned Breaks instead of Conflicts for libosmium2-dev.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 22 Aug 2015 22:09:29 +0200
+
+protozero (1.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #796508)
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 22 Aug 2015 11:41:42 +0200
